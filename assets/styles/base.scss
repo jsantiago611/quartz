@@ -14,10 +14,10 @@
   font-display: swap;
 }
 
-h1 {
-  text-shadow: var(--text-shadow);
 
-}
+//h1 {
+//  text-shadow: var(--text-shadow);
+//}
 
 h1,
 h2,
@@ -231,6 +231,10 @@ a {
 
   &:hover {
     color: var(--tertiary) !important;
+  }
+  
+  &:h1 {
+    color: var(--dark) !important;
   }
 }
 
