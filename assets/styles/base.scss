@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+h1 {
+  text-shadow: var(--text-shadow);
+}
+
 h1,
 h2,
 h3,
@@ -21,6 +25,7 @@ h4,
 h5,
 h6 {
   letter-spacing: -0.05em;
+  color: white !important;
 }
 
 h1, h2, h3, h4, h5, h6, ol, ul, thead {
@@ -29,7 +34,6 @@ h1, h2, h3, h4, h5, h6, ol, ul, thead {
   font-weight: revert;
   margin: revert;
   padding: revert;
-  text-shadow: var(--text-shadow);
 }
 
 p, ul, text {
