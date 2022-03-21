@@ -25,12 +25,11 @@ h4,
 h5,
 h6 {
   letter-spacing: -0.05em;
-  color: white !important;
 }
 
 h1, h2, h3, h4, h5, h6, ol, ul, thead {
   font-family: "Inter";
-  color: var(--dark);
+  color: var(--dark) !important;
   font-weight: revert;
   margin: revert;
   padding: revert;
