@@ -66,7 +66,7 @@ p, ul, text {
   }
 
   & > li::marker, & > li > ol > li::marker {
-    font-family: Source Sans Pro;
+    font-family: "Inter";
     font-weight: 700;
   }
 }
@@ -97,7 +97,7 @@ sup {
 }
 
 p, tbody, li {
-  font-family: Source Sans Pro;
+  font-family: "Inter";
   color: var(--gray);
   line-height: 1.5em;
 }
@@ -193,7 +193,7 @@ article {
   }
 
   & a {
-    font-family: Source Sans Pro;
+    font-family: "Inter";
     font-weight: 600;
 
     &.internal-link {
@@ -340,7 +340,7 @@ hr {
 }
 
 article > h1 {
-  font-size: 2em;
+  font-size: 5.125rem;
 }
 
 header {
@@ -350,6 +350,7 @@ header {
 
   & > h1 {
     font-size: 2em;
+    color: var(--dark)
   }
 
   & > nav {
