@@ -17,7 +17,7 @@
     {{$finalCss := $css | resources.Concat "styles.css" | resources.Fingerprint "md5" | resources.Minify  }}
     <link href="{{$finalCss.Permalink}}" rel="stylesheet">
 
-    {{ $darkMode := resources.Get "js/darkmode.js" |  resources.Fingerprint "md5" | resources.Minify }}
+    {{ $darkMode := resources.Get "js/js-darkmode-toggle.js" |  resources.Fingerprint "md5" | resources.Minify }}
     <script src="{{$darkMode.Permalink}}"></script>
 
     <!--  Preload page vars  -->
