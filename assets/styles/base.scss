@@ -195,7 +195,7 @@ article {
 
   & a {
     font-family: "Inter";
-    font-weight: 600;
+    font-weight: 400;
 
     &.internal-link {
       text-decoration: none;
@@ -360,9 +360,9 @@ header {
   flex-direction: row;
   align-items: center;
 
-  & > h1 {
+  & > h2 {
     font-size: 2em;
-    color: var(--dark)
+    color: var(--dark) !important;
   }
 
   & > nav {
