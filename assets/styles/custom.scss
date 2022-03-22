@@ -1,4 +1,4 @@
-// Add your own CSS here!
+/* Add your own CSS here!
 :root {
   --light: #fff;
   --dark: #000;
@@ -29,4 +29,34 @@
     0 0 0.3em #3291ff, 
     0 0 1em #3291ff,
     0 0 1.5em #3291ff;
+} */
+
+// define the color vars as a mixin so we can reuse it
+@mixin color-scheme-dark {
+  --color-scale-0: #001e2f;
+  --color-scale-25: #143044;
+  --color-scale-50: #576975;
+  --color-scale-75: #e6f1f8;
+  --color-scale-100: #ffffff;
+
+  --color-brand-primary: #7a27ff;
+  --color-brand-secondary: #26ffae;
+  --color-brand-tertiary: #ed667b;
+}
+
+// default to light colors...
+:root {
+  @include color-scheme-light;
+}
+
+// ...except if no theme is set and the system preference is dark
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    @include color-scheme-dark;
+  }
+}
+
+// override defaults through the data-theme attribute.
+:root[data-theme='dark'] {
+  @include color-scheme-dark;
 }
