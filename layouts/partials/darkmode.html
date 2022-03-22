@@ -1,3 +1,4 @@
+<!--
 <div class='darkmode'>
     <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
     <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
@@ -13,3 +14,15 @@
         </svg>
     </label>
 </div>
+
+ -->
+
+<!-- hook into js-darkmode-toggle via Javascript later -->
+<button class="lightswitch js-darkmode-toggle" role="switch" aria-checked="false">
+  <svg class="lightswitch__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <title>toggle dark mode</title>
+    <!-- include two different icon paths, then display the one matching the current state in CSS -->
+    <path class="lightswitch__icon__on" d="M9 20...1.512z"/>
+    <path class="lightswitch__icon__off" d="M9 20...6h-2z"/>
+  </svg>
+</button>
