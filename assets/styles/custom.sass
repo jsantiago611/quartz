@@ -1,5 +1,5 @@
 /* Add your own CSS here!
-:root {
+//:root {
   --light: #fff;
   --dark: #000;
   --secondary: #3291ff;
@@ -9,9 +9,9 @@
   --gray: #4e4e4e;
   --lightgray: #f0f0f0;
   --outlinegray: #dadada;
-}
+//}
 
-[saved-theme="dark"] {
+//[saved-theme="dark"] {
   --light: #000 !important;
   --dark: #fff !important;
   --secondary: #3291ff !important;
@@ -29,10 +29,10 @@
     0 0 0.3em #3291ff, 
     0 0 1em #3291ff,
     0 0 1.5em #3291ff;
-} */
+//} */
 
 // define the color vars as a mixin so we can reuse it
-[saved-theme="color-scheme-dark"] {
+@mixin color-scheme-dark {
   --color-scale-0: #001e2f;
   --color-scale-25: #143044;
   --color-scale-50: #576975;
