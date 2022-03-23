@@ -1,35 +1,4 @@
-/* Add your own CSS here!
-//:root {
-  --light: #fff;
-  --dark: #000;
-  --secondary: #3291ff;
-  --tertiary: #3291ff;
-  --visited: #3291ff;
-  --primary: #f28482;
-  --gray: #4e4e4e;
-  --lightgray: #f0f0f0;
-  --outlinegray: #dadada;
-//}
 
-//[saved-theme="dark"] {
-  --light: #000 !important;
-  --dark: #fff !important;
-  --secondary: #3291ff !important;
-  --visited: #3291ff !important;
-  --tertiary: #84a59d !important;
-  --primary: #f58382 !important;
-  --gray: #d4d4d4 !important;
-  --lightgray: #292633 !important;
-  --outlinegray: #343434 !important;
-  --text-shadow: 
-    0 0 0.033em #fff, 
-    0 0 0.08em #fff,
-    0 0 0.1em #3291ff, 
-    0 0 0.2em #3291ff, 
-    0 0 0.3em #3291ff, 
-    0 0 1em #3291ff,
-    0 0 1.5em #3291ff;
-//} */
 
 // define the color vars as a mixin so we can reuse it
 @mixin color-scheme-dark {
