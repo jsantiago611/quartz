@@ -43,6 +43,7 @@
   }
 } */
 
+.darkmode {
 // define the color vars as a mixin so we can reuse it
 @mixin color-scheme-dark {
   --color-scale-0: #001e2f;
@@ -71,4 +72,5 @@
 // override defaults through the data-theme attribute.
 :root[data-theme='dark'] {
   @include color-scheme-dark;
+}
 }
